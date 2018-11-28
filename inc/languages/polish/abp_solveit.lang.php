@@ -1,8 +1,8 @@
 <?php
 // Javascript languages
-$l['abp_sijs3'] = 'There was an error when solving :';
+$l['abp_sijs3'] = 'Wystapił błąd :';
 
 // Errors
-$l['abp_sierr1'] = 'Authentification error';
-$l['abp_sierr2'] = 'This forum does not accept solutions';
-$l['abp_sierr3'] = 'You are not allowed to solve this thread';
+$l['abp_sierr1'] = 'Błąd uwierzytelniania';
+$l['abp_sierr2'] = 'To forum nie akceptuje tej funkcji';
+$l['abp_sierr3'] = 'Nie masz uprawnień aby ustawić wątek jako rozwiązany';
