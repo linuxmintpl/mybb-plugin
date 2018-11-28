@@ -148,7 +148,7 @@ function imgur_activate() {
     $imgur_template[] = array(
         'title' => CN_ABPIMGUR . '_button',
         'template' => '<div style="margin:auto; width: 170px; margin-top: 20px;">
-		<div id="abp_imgur_zone" style="width:150px;height:50px;margin:auto; border: 3px dashed #BBBBBB; line-height:50px; text-align: center; background:url({$mybb->settings[\\\'bburl\\\']}/images/imgur.png) center no-repeat;"></div>
+		<div id="abp_imgur_zone" style="width:150px;height:50px;margin:auto; border: 3px dashed #BBBBBB; line-height:50px; text-align: center; background: #000000 url({$mybb->settings[\\\'bburl\\\']}/images/imgur.png) center no-repeat;"></div>
 <script>
 function imgurload() {
 	$(document).on("dragenter", "#abp_imgur_zone", function() {
