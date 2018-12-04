@@ -1,68 +1,62 @@
 <?php
 /**
-*  Language English
-*  Last Poster Avatar on Threads and Forums v 2.8.6
+*  Język polski
+*  Last Poster Avatar v3.0
 *
-*  Sitio Web: http://forosmybb.es
-*  Autor: Dark Neo - neogeoman@gmail.com
+*  WWW: https://webboard.pl/member.php?action=profile&uid=41959
+*  Autor: Axwell
 */
 
-// Don't remove this values
+// Nie usuwaj tych zmiennych
 $l['avatarep_name'] = "Shows Avatar on Threadlist and Forumlist";
-$l['avatarep_descrip'] = "Shows lastposter avatar on threadlist and forumlist and owners thread on threadlist.";
-$l['avatarep_config'] = "Plugin Configuration";
+$l['avatarep_descrip'] = "Pokazuje awatary autorów ostatnich postów oraz autorów wątków na stronie głównej i w widoku wątków.";
+$l['avatarep_config'] = "Konfiguracja pluginu";
 
-// Use this to change in your language phrases
+// Użyj tych zmiennych, aby zmienić nazwy i opisy ustawie
 $l['avatarep_title'] = "[Plugin] Shows Avatar on Threads and forums";
-$l['avatarep_title_descrip'] = "Configure this plugin (avatar options)";
+$l['avatarep_title_descrip'] = "Skonfiguruj ten plugin (ustawienia awatarów).";
 
-$l['avatarep_power'] = "Enable/Disable Plugin";
-$l['avatarep_power_descrip'] = "Select if you want to activate this plugin";
+$l['avatarep_power'] = "Plugin włączony/wyłączony";
+$l['avatarep_power_descrip'] = "Wybierz, czy chcesz aktywować ten plugin.";
 
-$l['avatarep_forum'] = "Avatar on Forums";
-$l['avatarep_forum_descrip'] = "Shows lastposter avatar on forumlist";
+$l['avatarep_forum'] = "Awatary na stronie głównej";
+$l['avatarep_forum_descrip'] = "Wyświetla awatary autorów ostatnich postów na stronie głównej.";
 
-$l['avatarep_thread_owner'] = "Avatar on Threads";
-$l['avatarep_thread_owner_descrip'] = "Shows owners avatar on threadlist";
+$l['avatarep_thread_owner'] = "Awatary na liście wątków";
+$l['avatarep_thread_owner_descrip'] = "Wyświetla awatary autorów wątków oraz autorów ostatnich postów na liście wątków.";
 
-$l['avatarep_thread_lastposter'] = "Avatar on Threads";
-$l['avatarep_thread_lastposter_descrip'] = "Shows lastposter avatar on threadlist";
+$l['avatarep_portal'] = "Awatary na portalu - ostatnie wątki";
+$l['avatarep_portal_descrip'] = "Wyświetla awatary autorów wątków na liście ostatnich wątków na portalu.";
 
-$l['avatarep_thread_announcements'] = "Avatar on Announcements";
-$l['avatarep_thread_announcements_descrip'] = "Shows avatar of announcements user";
+$l['avatarep_search'] = "Awatary w wyszukiwarce";
+$l['avatarep_search_descrip'] = "Wyświetla awatary w wynikach wyszukiwania.";
 
-$l['avatarep_portal'] = "Avatar in Portal - Latest Threads";
-$l['avatarep_portal_descrip'] = "Shows avatar of announcements user in Portal";
+$l['avatarep_menu'] = "Okna modalne";
+$l['avatarep_menu_descrip'] = "Wyświetla okno modalne z informacjami o użytkowniku po kliknięciu lub najechaniu na jego awatar.";
 
-$l['avatarep_search'] = "Avatar on Search";
-$l['avatarep_search_descrip'] = "Shows avatar on search results";
+$l['avatarep_menu_events'] = "Wywoływanie";
+$l['avatarep_menu_events_descrip'] = "Wybierz, kiedy wywoływać okno modalne.";
 
-$l['avatarep_menu'] = "Modal Box popup";
-$l['avatarep_menu_descrip'] = "Shows a nice popup menu for mouse events selected down for every avatar of user";
+$l['avatarep_guests'] = "Awatary gości";
+$l['avatarep_guests_descrip'] = "Wyświetla gosciom domyślne awatary.";
 
-$l['avatarep_menu_events'] = "Mouse events";
-$l['avatarep_menu_events_descrip'] = "Select mouse event to show modal box.";
+$l['avatarep_format'] = "Formatowanie nazw użytkowników";
+$l['avatarep_format_descrip'] = "Formatuje nazwy użytkowników zgodnie z ustawieniami ich grup.";
 
-$l['avatarep_guests'] = "Guests Avatar";
-$l['avatarep_guests_descrip'] = "Shows default avatar for guests";
+$l['avatarep_private'] = "Awatary w prywatnych wiadomościach";
+$l['avatarep_private_descrip'] = "Wyświetla awatary w prywatnych wiadomościach.";
 
-$l['avatarep_format'] = "Display formatted usernames";
-$l['avatarep_format_descrip'] = "Shows format names for every usergroup with html code configured";
+$l['avatarep_latest_threads'] = "Awatary w ostatnich wątkach";
+$l['avatarep_latest_threads_descrip'] = "Wyświetla awatary w pluginach na ostatnie wątki.";
 
-$l['avatarep_private'] = "Avatar in Private Messages";
-$l['avatarep_private_descrip'] = "Shows avatar in Private Messages";
+$l['avatarep_thread_lastposter_mark'] = "Oznaczanie wątków w których się odpowiedziało";
+$l['avatarep_thread_lastposter_mark_descrip'] = "Oznacza wątki, w których odpowiedziałeś (wymaga dodatkowych zapytań).";
 
-$l['avatarep_latest_threads'] = "Avatar in Latest Threads";
-$l['avatarep_latest_threads_descrip'] = "Shows avatar in Portal and SideBoxes plugin for latest threads";
+$l['avatarep_thread_contributor'] = "Awatar przy nazwie wątku";
+$l['avatarep_thread_contributor_descrip'] = "Wyświetla obok nazwy wątku awatar jego autora, jeżeli jednak odpowiedziałeś w tym wątku, wyświetlany jest Twój awatar.";
 
-$l['avatarep_thread_lastposter_mark'] = "Mark replied threads";
-$l['avatarep_thread_lastposter_mark_descrip'] = "Show avatar hover thread owner when you have replied to a thread, (requires addittional queries).";
+$l['avatarep_usercp'] = "Awatary w panelu użytkownika";
+$l['avatarep_usercp_descrip'] = "Wyświetla awatary na liście Twoich najnowszych wątków w panelu użytkownika.";
 
-$l['avatarep_thread_contributor'] = "Show Avatar Contributor";
-$l['avatarep_thread_contributor_descrip'] = "Shows avatar of thread owner in showthread, but yours if you've replied to that thread.";
-
-$l['avatarep_usercp'] = "Avatar in User Control Panel";
-$l['avatarep_usercp_descrip'] = "Shows avatar on listed thread into your user cp";
-
-$l['avatarep_onerror'] = "Shows white or broken avatars as default";
-$l['avatarep_onerror_descrip'] = "If some error ocurrs when avatar is loading like img was removed or broken, then default avatar appears (This brokes w3c validation due onerror img tag js function is not validated there, Disable this option to validate with w3c).";
+$l['avatarep_onerror'] = "Wyświetlanie zepsutych awatarów jako domyślne";
+$l['avatarep_onerror_descrip'] = "Jeżeli coś pójdzie nie tak podczas wczytywania awatara (np. obrazek został usunięty lub uszkodzony), to zamiast niego pojawi się domyślny awatar (powoduje to jednak problemy podczas walidacji W3C, jeżeli Ci na niej zależy, to wyłącz tę opcję).";
