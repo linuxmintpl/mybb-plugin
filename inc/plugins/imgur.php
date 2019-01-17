@@ -3,7 +3,7 @@
 /**
  * Imgur.com plugin : allow to upload an image to imgur
  * and add it in the post
- * (c) CrazyCat 2014 - 2016
+ * (c) CrazyCat 2014 - 2019
  */
 if (!defined("IN_MYBB"))
     die('Direct initialization of this file is not allowed.<br /><br />Please make sure IN_MYBB is defined.');
@@ -29,7 +29,7 @@ function imgur_info() {
         'website' => 'https://www.g33k-zone.org',
         'author' => 'CrazyCat',
         'authorsite' => 'https://www.g33k-zone.org',
-        'version' => '2.4',
+        'version' => '2.5',
         'compatibility' => '18*',
         'codename' => CN_ABPIMGUR
     );
@@ -262,7 +262,7 @@ $(function() {
 	<div style="overflow-y: auto; max-height: 200px; background-color:rgb(43,43,43);padding:10px;text-align:center;" class="modal_{$pid}">
 		<img src="{$mybb->settings[\\\'bburl\\\']}/images/imgur.png" /><br />
 		<button onclick="$(\\\'#selector\\\').click()">{$lang->imgur_select}</button>
-		<input id="selector" style="visibility:hidden;position:absolute;top:0;" type="file" onchange="pupload(this.files)" accept="image/*">
+		<input id="selector" style="visibility:hidden;position:absolute;top:0;" type="file" onchange="pupload(this.files)" accept="image/*" multiple>
 		<p id="uploading" style="display:none;"><img src="{$mybb->settings[\\\'bburl\\\']}/images/loader.gif" border="0" /></p>
 	</div>
 	<script type="text/javascript">
