@@ -1,2 +1,2 @@
 # mybb-plugin
-Dodać opis
+Dodać opis.
