@@ -14,7 +14,9 @@ $plugins->add_hook('newreply_end', 'imgur_button');
 $plugins->add_hook('newthread_end', 'imgur_button');
 $plugins->add_hook('editpost_start', 'imgur_button');
 $plugins->add_hook('private_send_start', 'imgur_button');
+$plugins->add_hook('private_read', 'imgur_button');
 $plugins->add_hook('misc_start', 'imgur_popup');
+$plugins->add_hook('showthread_start', 'imgur_loader');
 $plugins->add_hook('showthread_start', 'imgur_loader');
 
 /**
@@ -29,7 +31,7 @@ function imgur_info() {
         'website' => 'https://www.g33k-zone.org',
         'author' => 'CrazyCat',
         'authorsite' => 'https://www.g33k-zone.org',
-        'version' => '2.5',
+        'version' => '2.6',
         'compatibility' => '18*',
         'codename' => CN_ABPIMGUR
     );
@@ -148,7 +150,7 @@ function imgur_activate() {
     $imgur_template[] = array(
         'title' => CN_ABPIMGUR . '_button',
         'template' => '<div style="margin:auto; width: 170px; margin-top: 20px;">
-		<div id="abp_imgur_zone" style="width:150px;height:50px;margin:auto; border: 3px dashed #BBBBBB; line-height:50px; text-align: center; background: #000000 url({$mybb->settings[\\\'bburl\\\']}/images/imgur.png) center no-repeat;"></div>
+		<div id="abp_imgur_zone" style="width:150px;height:50px;margin:auto; border: 3px dashed #BBBBBB; line-height:50px; text-align: center; background:url({$mybb->settings[\\\'bburl\\\']}/images/imgur_dark.png) center no-repeat; cursor: pointer;"></div>
 <script>
 function imgurload() {
 	$(document).on("dragenter", "#abp_imgur_zone", function() {
@@ -262,7 +264,7 @@ $(function() {
 	<div style="overflow-y: auto; max-height: 200px; background-color:rgb(43,43,43);padding:10px;text-align:center;" class="modal_{$pid}">
 		<img src="{$mybb->settings[\\\'bburl\\\']}/images/imgur.png" /><br />
 		<button onclick="$(\\\'#selector\\\').click()">{$lang->imgur_select}</button>
-		<input id="selector" style="visibility:hidden;position:absolute;top:0;" type="file" onchange="pupload(this.files)" accept="image/*" multiple>
+		<input id="selector" style="visibility:hidden;position:absolute;top:0;" type="file" onchange="pupload(this.files)" accept="image/*" multiple="multiple">
 		<p id="uploading" style="display:none;"><img src="{$mybb->settings[\\\'bburl\\\']}/images/loader.gif" border="0" /></p>
 	</div>
 	<script type="text/javascript">
@@ -287,6 +289,8 @@ $(function() {
     find_replace_templatesets('newthread', '#{\$smilieinserter}#', '{\$smilieinserter}<!-- Imgur -->{$imgur_button}<!-- /Imgur -->');
     find_replace_templatesets('editpost', '#{\$smilieinserter}#', '{\$smilieinserter}<!-- Imgur -->{$imgur_button}<!-- /Imgur -->');
     find_replace_templatesets('private_send', '#{\$smilieinserter}#', '{\$smilieinserter}<!-- Imgur -->{$imgur_button}<!-- /Imgur -->');
+    find_replace_templatesets('showthread_quickreply', '#{\$closeoption}</span>#', '{\$closeoption}</span><!-- Imgur -->{$imgur_button}<!-- /Imgur -->');
+    find_replace_templatesets('private_quickreply', '#{\$private_send_tracking}</span>#', '{\$closeoption}</span><!-- Imgur -->{$imgur_button}<!-- /Imgur -->');
 }
 
 /**
@@ -301,6 +305,8 @@ function imgur_deactivate() {
     find_replace_templatesets('newthread', '#\<!--\sImgur\s--\>(.+)\<!--\s/Imgur\s--\>#is', '', 0);
     find_replace_templatesets('editpost', '#\<!--\sImgur\s--\>(.+)\<!--\s/Imgur\s--\>#is', '', 0);
     find_replace_templatesets('private_send', '#\<!--\sImgur\s--\>(.+)\<!--\s/Imgur\s--\>#is', '', 0);
+    find_replace_templatesets('showthread_quickreply', '#\<!--\sImgur\s--\>(.+)\<!--\s/Imgur\s--\>#is', '', 0);
+    find_replace_templatesets('private_quickreply', '#\<!--\sImgur\s--\>(.+)\<!--\s/Imgur\s--\>#is', '', 0);
 }
 
 //########## FUNCTIONS ##########

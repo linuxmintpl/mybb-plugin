@@ -12,21 +12,21 @@ $l['imgur_setting_description'] = "Settings for Imgur uploader";
 
 // Option "Client ID"
 $l['imgur_ci_title'] = "Imgur API client ID";
-$l['imgur_ci_description'] = "Your client ID. Get it at <a href='https://api.imgur.com/' target='_blank'>api.imgur.com</a> if you don't have any.";
+$l['imgur_ci_description'] = "Twój client ID. Pobierz z <a href='https://api.imgur.com/' target='_blank'>api.imgur.com</a> jesli żadnego nie posiadasz.";
 $l['imgur_ci_default'] = "ClientID";
 
 // Option "Display"
-$l['imgur_display_title'] = "Display size";
-$l['imgur_display_description'] = "Choose the size of the displayed picture";
-$l['imgur_disp_raw'] = "Original size";
-$l['imgur_disp_small'] = "Small (max 160x160)";
-$l['imgur_disp_medium'] = "Medium (max 320x320)";
-$l['imgur_disp_large'] = "Large (max 640x640)";
+$l['imgur_display_title'] = "Rozmiar";
+$l['imgur_display_description'] = "Wybierz rozmiar wyświetlanego obrazka";
+$l['imgur_disp_raw'] = "Oryginalny rozmiar";
+$l['imgur_disp_small'] = "Mały (max 160x160)";
+$l['imgur_disp_medium'] = "Średni (max 320x320)";
+$l['imgur_disp_large'] = "Duży (max 640x640)";
 
 // Option "Link"
-$l['imgur_link_title'] = "Enable links";
-$l['imgur_link_description'] = "If displayed picture is not the original, a link to the original is created";
+$l['imgur_link_title'] = "Włącz odnośniki";
+$l['imgur_link_description'] = "Jeśli wyświetlany obraz nie jest oryginalny, odnośnik do oryginalnego zostanie stworzony";
 
 // Option "Quick editor"
-$l['imgur_quick_title'] = "Enable in quick reply";
-$l['imgur_quick_description'] = "If enable, imgur uploader will be available in quick reply.";
+$l['imgur_quick_title'] = "Włącz w szybkich odpowiedziach";
+$l['imgur_quick_description'] = "jesli włączone, imgur uploader  będzie dostępny w szybkich odpowiedziach.";
