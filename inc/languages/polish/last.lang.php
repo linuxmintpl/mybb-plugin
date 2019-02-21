@@ -12,16 +12,16 @@
  * 
  */
 
-$l['last_posts'] = "Last Posts";
-$l['Starter'] = "Starter";
-$l['no_thread'] = "No Threads";
-$l['latest_threads'] = "Latest Threads";
-$l['latest_threads_replies'] = "Replies:";
-$l['latest_threads_views'] = "Views:";
-$l['latest_threads_lastpost'] = "Last Post by:";
-$l['Forum_Name'] = "Forum name:";
-$l['views'] = "Views:";
-$l['re_time'] = "Time:";
-$l['Not_read'] = "Go to first unread post";
+$l['last_posts'] = "Ostatnie wiadomości";
+$l['Starter'] = "Rozpoczął";
+$l['no_thread'] = "Brak wątków";
+$l['latest_threads'] = "Ostatnie wątki";
+$l['latest_threads_replies'] = "Odpowiedzi:";
+$l['latest_threads_views'] = "Wyświetleń:";
+$l['latest_threads_lastpost'] = "Ostatni odpowiadający:";
+$l['Forum_Name'] = "Forum:";
+$l['views'] = "Wyświetleń:";
+$l['re_time'] = "Czas:";
+$l['Not_read'] = "Idź do pierwszej nieprzeczytanej wiadomości";
 
 ?>
