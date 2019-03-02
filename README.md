@@ -1,2 +1,2 @@
 # mybb-plugin
-Dodać opis.
+Pluginy dla forum testowego LinuxMintPL
